@@ -11,7 +11,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  return text.scan(/\b/)
+  return text.scan(/\bi\w/)
 end
 
 def valid_phone_number?(phone)
