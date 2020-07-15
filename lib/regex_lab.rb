@@ -16,7 +16,7 @@ end
 
 def valid_phone_number?(phone)
   phone.scan(/[\d{3}][\d{3}][\d{4}]/)
-  if phone.length > 0
+  if(phone.length > 0)
     return true
   else
     return false
