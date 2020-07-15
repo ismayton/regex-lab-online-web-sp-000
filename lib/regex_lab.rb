@@ -27,7 +27,7 @@ end
 def valid_phone_number?(phone)
   if phone.scan(/\D\d{3}\d{3}\d{4}]\D/)
     return true
-  elsif phone.scan(/\D\d{3}\W\d{3}\W\d{4}\D/)
+  elsif phone.scan(/\D\d{3}\D\d{3}\D\d{4}\D/)
     return true
   else
     return false
