@@ -1,5 +1,6 @@
 def starts_with_a_vowel?(word)
-  if word.scan(/\b[aeiou]/)
+  vowel_start = word.scan(/\b[aeiou]/)
+  if vowel_start.length > 0  
     return true
   else
     return false
@@ -14,12 +15,17 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text.scan(/\bi\w\w*\b/)
+  capitalized_and_punctuated = text.scan(/\bi\w\w*\b/)
+  if capitalized_and_punctuated.length > 0  
     return true
   else
     return false
 end
 
 def valid_phone_number?(phone)
-  phone.scan(/\d{3}\d{3}\d{4}]/)
+  phone_number = phone.scan(/\d{3}\d{3}\d{4}]/)
+  if phone_number.length > 0
+    return true
+  else
+    return false
 end
